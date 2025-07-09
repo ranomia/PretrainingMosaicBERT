@@ -58,6 +58,20 @@
 
 成果物例: `s3://mosaicbert-datasets/japanese_mlm/v1/*.mds`
 
+### Python スクリプト対応表
+
+| タスク | スクリプト |
+|-------|------------|
+| 3‑1 | `scripts/step03_data_pipeline/download_llm_jp.py` |
+| 3‑2 | `scripts/step03_data_pipeline/sample_quality.py` |
+| 3‑3 | `scripts/step03_data_pipeline/download_wikipedia.py` |
+| 3‑4 | `scripts/step03_data_pipeline/extract_cc100.py` |
+| 3‑5 | `scripts/step03_data_pipeline/crawl_aozora_diet.py` |
+| 3‑6 | `scripts/step03_data_pipeline/deduplicate.py` |
+| 3‑7 | `scripts/step03_data_pipeline/adjust_domain_ratio.py` |
+| 3‑8 | `scripts/step03_data_pipeline/convert_to_mds.py` |
+| 3‑9 | `scripts/step03_data_pipeline/upload_to_s3.py` |
+
 ---
 
 ## 4. トークナイザ（2 日）
