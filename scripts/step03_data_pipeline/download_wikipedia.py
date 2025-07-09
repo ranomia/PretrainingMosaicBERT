@@ -2,7 +2,6 @@ import argparse
 import os
 import requests
 
-
 BASE_URL = 'https://dumps.wikimedia.org/jawiki/'
 
 
