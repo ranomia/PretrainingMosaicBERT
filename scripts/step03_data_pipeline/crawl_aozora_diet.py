@@ -13,11 +13,13 @@ def fetch_url(url: str) -> str:
     return r.text
 
 
+
 def crawl_aozora(out_dir: str, max_bytes: int | None = None) -> None:
     html = fetch_url(AOZORA_LIST)
     soup = BeautifulSoup(html, 'html.parser')
     os.makedirs(out_dir, exist_ok=True)
     downloaded = 0
+
     for link in soup.select('a[href$=".txt"]'):
         url = link['href']
         filename = os.path.join(out_dir, os.path.basename(url))
@@ -50,6 +52,7 @@ def crawl_diet(record_ids: list[str], out_dir: str, max_bytes: int | None = None
         with open(path, 'wb') as f:
             f.write(data)
         downloaded += len(data)
+
 
 
 def main():
